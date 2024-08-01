@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-size: 62.5%;
+}
+
+@layer base {
+  label {
+    @apply text-base font-medium text-[#bbb];
+  }
+
+  input {
+    @apply text-sm p-10 focus-within:outline focus-within:outline-2 focus-within:outline-violet-500 rounded-tl-xl rounded-br-xl rounded-sm bg-[#666] text-[#bbb] placeholder:text-[#bbb] placeholder:font-medium placeholder:capitalize;
+  }
+
+  button {
+    @apply text-base px-16 py-10 bg-gradient-to-r from-blue-500 to-cyan-500 text-white;
+  }
+  body {
+    @apply bg-[#222] overflow-hidden;
+  }
+}
